@@ -1,0 +1,64 @@
+.quantityInput {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.inputGroup {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quantityField {
+  width: 100%;
+  text-align: center;
+  border: none;
+  padding: 0.5rem 0;
+  -moz-appearance: textfield; /* Firefox */
+  font-size: 1rem;
+}
+
+.quantityField::-webkit-inner-spin-button,
+.quantityField::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantityField:focus {
+  outline: none;
+}
+
+.quantityButton {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f8f9fa;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.quantityButton:hover {
+  background-color: #e9ecef;
+}
+
+.quantityButton:active {
+  background-color: #dae0e5;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

@@ -1,0 +1,54 @@
+.shopPage {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.shopHeader {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.shopTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.productsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .shopHeader {
+    padding: 2rem 0;
+  }
+  
+  .shopTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .shopHeader {
+    padding: 1.5rem 0;
+  }
+  
+  .shopTitle {
+    font-size: 1.75rem;
+  }
+}
