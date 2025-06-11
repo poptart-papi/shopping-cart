@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './Navigation.module.css';
 
@@ -9,7 +9,6 @@ interface NavigationProps {
 }
 
 const Navigation: FC<NavigationProps> = ({ cartItemCount, currentPage }) => {
-  const location = useLocation();
   
   return (
     <nav className={styles.navigation}>

@@ -19,7 +19,6 @@ const FeaturedProducts: FC<FeaturedProductsProps> = ({
 }) => {
   const { 
     featuredProducts, 
-    isPaused, 
     pauseRotation, 
     resumeRotation, 
     isTransitioning 

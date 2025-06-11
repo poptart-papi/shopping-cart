@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
-import PropTypes from 'prop-types';
 import { CartItem as CartItemType } from '../../../context/CartContext';
 import styles from './CartItem.module.css';
 
@@ -86,19 +85,8 @@ const CartItem: FC<CartItemProps> = ({ item, onUpdateQuantity, onRemoveItem }) =
   );
 };
 
-CartItem.propTypes = {
-  item: PropTypes.shape({
-    productId: PropTypes.number.isRequired,
-    product: PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      image: PropTypes.string.isRequired,
-    }).isRequired,
-    quantity: PropTypes.number.isRequired,
-  }).isRequired,
-  onUpdateQuantity: PropTypes.func.isRequired,
-  onRemoveItem: PropTypes.func.isRequired,
-};
+// Remove PropTypes validation to fix TypeScript error
+// PropTypes and TypeScript interfaces don't perfectly align in this case
+// and we're already getting type safety from TypeScript
 
 export default CartItem;
